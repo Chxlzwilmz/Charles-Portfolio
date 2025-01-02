@@ -1,0 +1,255 @@
+/* style.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  header {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .name-title {
+    font-size: 3rem; /* Adjust size as needed */
+    color: #ffffff; /* Default white for all letters */
+    margin: 0;
+    padding: 0;
+    text-shadow: none;
+    line-height: 1.5;
+  }
+  
+  .name-title .first-letter {
+    color: #00ffff; /* Neon Light Blue for the first letter */
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff; /* Neon Glow Effect */
+  }
+  
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink {
+    50% { border-color: transparent; }
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #ffffff; /* Change the subtitle color to white */
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff; /* Remove the neon glow effect */
+  }
+  
+  
+  .cta-button {
+    padding: 10px 20px;
+    color: #00ffff; /* Neon Light Blue Text */
+    background-color: transparent; /* Transparent Background */
+    border: 2px solid #00ffff; /* Neon Border */
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff; /* Neon Glow Effect */
+    margin-top: 20px; /* Adjust the value to move it down further */
+    display: inline-block;
+  }
+  
+  .cta-button:hover {
+    color: #ffffff; /* Dark Background on Hover */
+    background-color: #12a1f3; /* Neon Light Blue Background */
+    box-shadow: 0 0 15px #12a1f3, 0 0 30px #12a1f3; /* Stronger Glow on Hover */
+  }
+  
+  section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .project-card {
+    background-color: #1e1e1e;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Neon effect for entire text */
+.neon-text {
+    color: #ffffff; /* Neon blue */
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff;
+  }
+
+  #resume {
+    padding: 50px 20px;
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    color: #ffffff; /* White color for the section title */
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff; /* Optional neon glow effect */
+  }
+  
+  .resume-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .resume-button {
+    padding: 10px 20px;
+    color: #00ffff;
+    background-color: transparent;
+    border: 2px solid #00ffff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-align: center;
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+  }
+  
+  .resume-button:hover {
+    color: #121212;
+    background-color: #00ffff;
+    box-shadow: 0 0 15px #00ffff, 0 0 30px #00ffff;
+  }
+  
+  .resume-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px; /* Space between each section */
+  }
+  
+  .resume-card {
+    background-color: #1e1e1e; /* Keep the card background color */
+    border: 1px solid #333333;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .resume-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .resume-card h3 {
+    font-size: 1.5rem;
+    color: #ffffff; /* White color for the title */
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff; /* Optional glow effect for headings */
+  }
+  
+  .resume-card p,
+  .resume-card ul {
+    font-size: 1rem;
+    color: #ffffff; /* White color for the content text */
+    margin: 10px 0;
+  }
+  
+  .resume-card ul {
+    padding-left: 20px;
+  }
+
+  .resume-button, .project-link {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 10px 15px;
+    color: #00ffff;
+    background-color: transparent;
+    border: 2px solid #00ffff; /* Neon Border */
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff; /* Neon Glow Effect */
+  }
+  
+  .resume-button:hover, .project-link:hover {
+    color: #ffffff;
+  background-color: #12a1f3;
+  box-shadow: 0 0 15px #12a1f3, 0 0 30px #12a1f3; /* Stronger Glow on Hover */
+}
+  
+  footer {
+    background-color: #1e1e1e;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  
+/* Styling for the Contact Section */
+#contact {
+    padding: 30px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px; /* Add margin-top to push the section down */
+  }
+  
+  /* Form styling */
+  form input,
+  form textarea,
+  form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #333;
+    background-color: #1e1e1e;
+    color: #fff;
+  }
+  
+  form button {
+    background-color: #12a1f3;
+    border: none;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #12a1f3;
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+  }
+  
+  /* Social Icons Styling */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px; /* Slightly lower margin for social icons */
+  }
+  
+  .social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .social-icons a:hover {
+    color: #00ffff; /* Neon color on hover */
+  }
+  
+  .social-icons i {
+    font-size: 1.8rem; /* Adjust icon size */
+  }
